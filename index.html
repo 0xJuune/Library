@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="transparent">
+        <div class="modal card">
+            
+            <div class="title">Add a Book<button class="exit">x</button></div>
+            <form class="form" name="bookForm" onsubmit="return false" action="">
+                <div class="inputWrap">
+                    <label for="title">What's the title?</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+                <div class="inputWrap">
+                    <label for="author">Who's the Author?</label>
+                    <input type="text" id="author" name="author" required>
+                </div>
+                <div class="inputWrap">
+                    <label for="pagecount">How many pages?</label>
+                    <input type="number" id="pagecount" name="pagecount" required>
+                </div>
+                <div class="inputWrap" >
+                    <label for="read" id="radioArea">Have you read this?</label>
+                    <div class="radioWrap">
+                        <input type="radio" id="finished" name="read" value="Finished" required>
+                        <label for="read">Finished</label>
+                    </div>
+                    <div class="radioWrap">
+                        <input type="radio" id="reading" name="read" value="Reading">
+                        <label for="read">Currently Reading</label>
+                    </div>
+                    <div class="radioWrap">
+                        <input type="radio" id="untouched" name="read" value="Untouched">
+                        <label for="read">Haven't Started</label>
+                    </div>
+                </div>
+                <input type="submit" id="submitButton" value="Add Book!">
+            </form>
+        </div>
+    </div>
+    <div class="main">
+        <div class="card addBook">
+            <div class="icon">
+                <!-- <img src="https://www.flaticon.com/svg/vstatic/svg/3917/3917172.svg?token=exp=1652400399~hmac=11d5611a78e732a127bb632fc1bdd4c7" alt=""> -->
+                <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24"><path fill="hsl(196, 64%, 20%)" d="M23,11H13V1a1,1,0,0,0-1-1h0a1,1,0,0,0-1,1V11H1a1,1,0,0,0-1,1H0a1,1,0,0,0,1,1H11V23a1,1,0,0,0,1,1h0a1,1,0,0,0,1-1V13H23a1,1,0,0,0,1-1h0A1,1,0,0,0,23,11Z"/></svg>            
+            </div>
+        </div>
+        <!-- <div class="card">
+            <div class="title">Card Title</div>
+            <div>This is some filler description text for visual effect. It is an example only.</div>
+        </div> -->
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
